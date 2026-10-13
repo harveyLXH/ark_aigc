@@ -1,0 +1,75 @@
+{
+  "SceneConfig": {
+    "icon": "https://lf3-rtc-demo.volccdn.com/obj/rtc-aigc-assets/DoubaoAvatar.png",
+    "name": "自定义助手"
+  },
+  "AccountConfig": {
+    "accessKeyId": "AKLTNjE1ZjljYzcwNjJmNGY0OTg1NjBlNDU2YmUwZjQ5ZDI",
+    "secretKey": "TUdRd1pqQXdabVkxT1dKbE5HTTFPR0kyWldKalpXTXhaREV6T0RVeFltVQ=="
+  },
+  "RTCConfig": {
+    "AppId": "6ac9edd27b1e57016a0b92fa",
+    "AppKey": "",
+    "RoomId": "ChatRoom01",
+    "UserId": "Huoshan01",
+    "Token": "0016ac9edd27b1e57016a0b92faSQBGjVgFIiXKaqJf02oKAENoYXRSb29tMDEJAEh1b3NoYW4wMQYAAACiX9NqAQCiX9NqAgCiX9NqAwCiX9NqBACiX9NqBQCiX9NqIADjspibMHonztZeliz057DtLupNTWJ48xrQB"
+  },
+  "VoiceChat": {
+    "AppId": "6ac9edd27b1e57016a0b92fa",
+    "RoomId": "ChatRoom01",
+    "TaskId": "ChatTask01",
+    "AgentConfig": {
+      "TargetUserId": [
+        "Huoshan01"
+      ],
+      "WelcomeMessage": "你好，我是小宁，有什么需要帮忙的吗？",
+      "UserId": "ChatBot01",
+      "EnableConversationStateCallback": true
+    },
+    "Config": {
+      "ASRConfig": {
+        "Provider": "volcano",
+        "ProviderParams": {
+          "Mode": "smallmodel",
+          "AppId": "1368000364",
+          "Cluster": "volcengine_streaming_common"
+        }
+      },
+      "TTSConfig": {
+        "Provider": "volcano",
+        "ProviderParams": {
+          "app": {
+            "appid": "9507759006",
+            "cluster": "volcano_tts"
+          },
+          "audio": {
+            "voice_type": "BV001_streaming",
+            "speed_ratio": 1,
+            "pitch_ratio": 1,
+            "volume_ratio": 1
+          }
+        }
+      },
+      "LLMConfig": {
+        "Mode": "ArkV3",
+        "EndPointId": "ep-20261010162231-gpvzg",
+        "SystemMessages": [
+          "你是小宁，性格幽默又善解人意。你在表达时需简明扼要，有自己的观点。"
+        ],
+        "VisionConfig": {
+          "Enable": false
+        }
+      },
+      "AvatarConfig": {
+        "Enabled": false,
+        "AvatarType": "3min",
+        "AvatarRole": "250623-zhibo-linyunzhi",
+        "BackgroundUrl": "",
+        "VideoBitrate": 2000,
+        "AvatarAppID": "",
+        "AvatarToken": ""
+      },
+      "InterruptMode": 0
+    }
+  }
+}
